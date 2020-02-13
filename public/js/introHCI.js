@@ -30,7 +30,7 @@ function addProjectDetails(e) {
 	// cannot do "idNumber because it'll just be a string"
 
 	console.log("User clicked on project " + idNumber);
-	$.get("http://localhost:3000/project/" + idNumber, addProject);
+	$.get("/project/" + idNumber, addProject);
 	console.log("http://localhost:3000/project/" + idNumber);
 }
 
